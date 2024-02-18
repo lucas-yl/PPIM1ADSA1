@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRISTAL - PP Eventos</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid" id="topo">
+      <a class="navbar-brand" href="inicio.html"><img src="./imgs/logo.png" width="300"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="inicio.html">Página inicial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="programacao.html">Programação</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="info.html">Quem somos</a>
+        </li>
+        </ul>
+      </div>
+      </div>
+  </nav>
+<!--body-->
+<body>
+<div class="info">
+    <a href="programacao.html" class="button" id="button4">Voltar aos eventos</a><br>
+    <div id="info1">
+        <img src="./imgs/evento1.png"></div><br>
+        <div id="info4">
+            <div id="info2">CRISTAL é uma banda de rock formada em 2021 em Presidente Prudente.<br>
+                A banda conta com um estilo de rock alternativo, com qualidades e instrumentos dinâmicos.<br>
+                Acumularam fama nacional após o lançamento do seu terceiro álbum.<br>
+                Este será o maior show já feito pela banda desde sua inauguração em 2021! Garanta já o seu ingresso.<br>
+        </div><br>
+        <div id="info3">
+            <ul>
+            <li>Horário: 17/03 • Domingo • 20h00</li>
+            <li>Local: Teatro PP1</li>
+            <li>Duração: 90 minutos</li>
+            <li>Classificação indicativa: 14 anos</li>
+        </ul>
+    </div>
+</div>
+</div>
+<div class="infopagamento">
+    <b><h3>SHOW DE ROCK - BANDA CRISTAL<br></b></h3>
+    <input id="quantidade" onclick="quantidade()" min="1" max="3" value="1" type="number"><br>
+    <h3>R$<span id="preco">50</span>,00</h3>
+    <i><small>Ingressos restantes: 32</small></i><br>
+    <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" class="button2" onclick="comprar()">Comprar</button><br>
+    <i><small>AVISO: A VENDA DE INGRESSOS É LIMITADA A 3 (TRÊS) INGRESSOS POR CPF CADASTRADO</small></i>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h3 class="offcanvas-title" id="offcanvasRightLabel">Valor final: <h2>R$<span id="precocanvas">30</span>,00</h2></h3>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div style="padding-left:20px;">
+      <h1>Compra de Ingresso</h1>
+      <hr>
+      <h4>Nome do dono do cartão</h4>
+      <div class="input-group" style="width:300px">
+          <span style="border-color:red" class="input-group-text" id="basic-addon1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-blockquote-left" viewBox="0 0 16 16">
+      <path d="M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm5 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm-5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm.79-5.373c.112-.078.26-.17.444-.275L3.524 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282c.024-.203.065-.37.123-.498a1.38 1.38 0 0 1 .252-.37 1.94 1.94 0 0 1 .346-.298zm2.167 0c.113-.078.262-.17.445-.275L5.692 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282a1.75 1.75 0 0 1 .118-.492c.058-.13.144-.254.257-.375a1.94 1.94 0 0 1 .346-.3z"></path>
+      </svg>
+          </span>
+          <input required style="text-transform: capitalize; border-color:red" id="nomecartao" minlength="3" maxlength="50" type="text" class="form-control" placeholder="Nome" aria-label="Input group example" aria-describedby="basic-addon1">*
+        </div>
+      <hr>
+      <h4>Número do cartão</h4>
+      <div class="input-group" style="width:250px">
+        <span style="border-color:red" class="input-group-text">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person-fill" viewBox="0 0 16 16">
+      <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11"></path>
+      </svg>
+        </span>
+        <input required style="border-color:red" id="cartao" maxlength=19 type="text" class="form-control" placeholder="Número do cartão" aria-label="Input group example" aria-describedby="basic-addon1">*
+      </div>
+      <hr>
+      <h4>Data de validade</h4>
+      <div class="input-group" style="width:200px">
+          <span style="border-color:red" class="input-group-text" id="basic-addon1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-blockquote-left" viewBox="0 0 16 16">
+      <path d="M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm5 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm-5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm.79-5.373c.112-.078.26-.17.444-.275L3.524 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282c.024-.203.065-.37.123-.498a1.38 1.38 0 0 1 .252-.37 1.94 1.94 0 0 1 .346-.298zm2.167 0c.113-.078.262-.17.445-.275L5.692 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282a1.75 1.75 0 0 1 .118-.492c.058-.13.144-.254.257-.375a1.94 1.94 0 0 1 .346-.3z"></path>
+      </svg>
+          </span>
+          <input required style="border-color:red" id="datacartao" type="date" min="2023-12-20" max="2040-01-01" class="form-control" placeholder="Data de validade" aria-label="Input group example" aria-describedby="basic-addon1">*
+        </div>
+      <hr>
+      <h4>CVV</h4>
+      <div class="input-group" style="width:105px">
+          <span style="border-color:red" class="input-group-text" id="basic-addon1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-front-fill" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm0 3a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm3 0a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z"/>
+                </svg>
+          </span>
+          <input required style="border-color:red" maxlength=3 type="text" class="form-control" placeholder="CVV" id="cvv" aria-label="Input group example" aria-describedby="basic-addon1">*
+        </div>
+      <hr>
+      <h4>Email</h4>
+      <small><i>Tenha certeza que seu email esteja correto. O seu ingresso digital será enviado por lá após a confirmação do pagamento.</i></small>
+      <hr>
+      <form>
+        <div class="mb-3">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>      
+      <hr>
+      <button onclick="checarCamposcartao()" id="btn" name="btn" class="btn btn-warning">Concluir compra</button>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </div>
+</div>
+<br/>
+<div id="rodape">
+    <i>Formas de pagamento -</i><img src="./imgs/pagamento.png" height=40px>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="./scripts/comprar.js"></script>
+<script src="./scripts/mascaras.js"></script>
+</body>
+</html>
